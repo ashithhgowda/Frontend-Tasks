@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a Internet Website">
+        <title>Internet</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            th,td{
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header id="top">
+                <h1>A Brief History of the Internet</h1>
+                <p>This educational resource explores the origins and evolution of the global network, from early packet-switching theories to the modern World Wide Web.</p>
+                <span class="techDoc">technical documentation</span>
+                <hr>
+            </header>
+            <section>
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li><a href="https://">Foundations and Milestones</a></li>
+                    <li><a href="https://">Internet History Inquiry</a></li>
+                    <li><a href="https://">Visual History</a></li>
+                    <li><a href="https://">Timeline of Key Protocols</a></li>
+                </ol>
+            </section>
+            <hr>
+            <section>
+                <h2>Foundations and Milestones</h2>
+                <p>The journey of the internet began in the late 1960s with the creation of ARPANET, funded by the U.S. Department of Defense. It was the first network to implement the protocol suite TCP/IP.</p>
+                <p>This early network demonstrated that <strong>packet switching</strong> (breaking data into small chunks) was more efficient than traditional circuit switching. It emphasized <em>decentralized communication</em>, ensuring that the network could survive even if parts of it were destroyed. Many historians also note that <u>DNS (Domain Name System)</u> was a crucial turning point in making the web accessible.</p>
+                <article>
+                    <h3>The Birth of the World Wide Web</h3>
+                    <p>While often used interchangeably, the Internet and the World Wide Web are different. Below are key components introduced by Tim Berners-Lee in 1989:</p>
+                    <ul>
+                        <li>HTML (HyperText Markup Language)</li>
+                        <li>HTTP (HyperText Transfer Protocol)
+                            <ul style="list-style-type: circle;">
+                            <li>The first web browser (WorldWideWeb)</li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <blockquote>
+                        "The Web is more a social creation than a technical one. I designed it for a social effect — to help people work together — and not as a technical toy." — <em>Tim Berners-Lee</em>
+                    </blockquote>
+                </article>
+                <p>Early web pages were written in basic HTML, similar to the following code snippet often used for demonstration:</p>
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to the web&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </section>
+            <hr>
+            <form >
+                <h2>Internet History Inquiry</h2>
+                <p>Please use this form to submit questions regarding specific eras of internet development.</p>
+                <fieldset>
+                    <legend>Inquiry Details</legend><br>
+                    <label for="name">Researcher Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter full name"><br><br>
+                    <label for="date">Date of Interest:</label><br>
+                    <input type="date" name="date" id="date"><br><br>
+                    <span>Preferred Response Era:</span><br>
+                    <input type="radio" name="response" id="arpanet" value="arpanet" >
+                    <label for="arpanet">Early ARPANET</label>
+                    <input type="radio" name="response" id="web" value="web" >
+                    <label for="web">Modern Web</label><br><br>
+                    <label for="knowledge">Knowledge Level:</label><br>
+                    <select name="Knowledge" id="knowledge">
+                        <option value="student">Student</option>
+                        <option value="historian">Historian</option>
+                        <option value="enthusiast">Enthusiast</option>
+                    </select><br><br>
+                    <input type="checkbox" name="checkbox">I verify that the information requested is for educational use <br><br>
+                    <button type="reset">Clear Inquiry</button>
+                    <button type="submit">Send Request</button>
+                </fieldset>
+            </form>
+            <hr>
+            <section>
+                <h2>Visual History</h2>
+                <p>Visual aids documenting the infrastructure of early data networks and hardware.</p>
+                <h3>Early Infrastructure</h3>
+                <img src="node.jpg" alt="" width="400" height="500">
+                <figcaption><em>Figure 1: A conceptual representation of a distributed network node.</em></figcaption>
+                <h3>Early Web Demonstrations</h3>
+                <video controls width="400">
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <p>
+                    The &lt;video&gt; element can be used to archive historical footage of early computing
+                </p>
+                <h3>Historical Audio</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <hr>
+            <h2>Timeline of Key Protocols</h2>
+            <table style="border: 1px solid black; ">
+                <caption>Network Protocol Adoption Matrix</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Protocol</th>
+                        <th scope="col">Intro Year</th>
+                        <th scope="col">Standardized</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TCP/IP</td>
+                        <td>1974</td>
+                        <td>1983</td>
+                    </tr>
+                    <tr>
+                        <td>DNS</td>
+                        <td>1983</td>
+                        <td>1984</td>
+                    </tr>
+                    <tr>
+                        <td>HTTP/1.1</td>
+                        <td>1997</td>
+                        <td>1999</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </main>
+        <footer>
+            &copy; 2024 Archive of Digital History. Educational resource for public use.
+        </footer>
+        <br>
+        <a href="#top">Back to Top</a>
+    </body>
+</html>
