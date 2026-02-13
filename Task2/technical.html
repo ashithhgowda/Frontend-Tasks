@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comprehensive Internet Technical Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <div class="container">
+    <main>
+        <header>
+            <span class="top">TECHNICAL DOCUMENTATION</span>
+            <h1>The Comprehensive Internet Technical Guide</h1>
+            <p>An advanced exploration into the protocols, architectural paradigms, and physical infrastructure that power the global digital ecosystem.</p>
+        </header>
+        <section class="cards">
+            <div class="card">
+                <a href="#core-section">
+                    <svg class="icon color1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network-icon lucide-network"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>
+                    <h3>Core Protocols</h3>
+                    <p>TCP/IP,OSI layers, and packet switching mechanics</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#global-section">
+                    <svg class="icon color2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth-icon lucide-earth"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"/><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"/><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"/><circle cx="12" cy="12" r="10"/></svg>
+                    <h3>Global Connectivity</h3>
+                    <p>Submarine cables and the physical backbone</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#infrastructure-section">
+                    <svg class="icon color3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-between-horizontal-end-icon lucide-between-horizontal-end"><rect width="13" height="7" x="3" y="3" rx="1"/><path d="m22 15-3-3 3-3"/><rect width="13" height="7" x="3" y="14" rx="1"/></svg>
+                    <h3>Infrastructure</h3>
+                    <p>Data center architecture and virtualization</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#cybersecurity-section">
+                    <svg class="icon color4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                    <h3>Cybersecurity</h3>
+                    <p>SSL/TSL handshakes and encryption flows</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#node-section">
+                    <svg class="icon color5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-horizontal-distribute-center-icon lucide-align-horizontal-distribute-center"><rect width="6" height="14" x="4" y="5" rx="2"/><rect width="6" height="10" x="14" y="7" rx="2"/><path d="M17 22v-5"/><path d="M17 7V2"/><path d="M7 22v-3"/><path d="M7 5V2"/></svg>
+                    <h3>Node Config</h3>
+                    <p>Simulate Network topology and parameters</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#refernce-section">
+                    <svg class="icon color6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rows4-icon lucide-rows-4"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M21 7.5H3"/><path d="M21 12H3"/><path d="M21 16.5H3"/></svg>
+                    <h3>Protocol Mapping</h3>
+                    <p>OSI vs TCP/IP refernce standards</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="core-section">
+            <h2>Core Network Protocols</h2>
+        
+            <section class="protocol-section">
+                <div class="text-content">
+                    <p>The Internet functions as a "Network of Networks" using a common set of rules known as the Internet Protocol Suite. While often used interchangeably, the <strong>OSI 7-Layer Model</strong> and <strong>TCP/IP Model</strong> provide different conceptual abstractions for how data flows from an application to the physical wire.</p>
+                    <p>The OSI model is a theoretical framework used to understand and design network communications, whereas the TCP/IP model is the practical, simplified implementation used in modern networking.</p>
+                    <div class="key-section">
+                        <strong>Key Distinction</strong>
+                        <p><em>"The OSI model defines functions; the TCP/IP model defines protocols."</em></p>
+                    </div>
+                </div>
+                <div class="video-section">
+                    <h3>The Packet Switching Animation</h3>
+                    <video controls aria-label="video" autoplay loop>
+                        <source src="./video/data-visualiztion.mp4" type="video/mp4">
+                    </video>
+                    <p>Figure 1: Conceptual preview of dynamic packet routing across a mesh network.</p>
+                </div>
+            </section>
+        </section>
+        <section class="code">
+            <pre>
+// Example: Handshake sequence simulation
+SYN -> Initializing Sequence Number
+SYN-ACK <- Acknowledge & Sequence Sync
+ACK -> Connection Established
+            </pre>
+        </section>
+
+        <section id="global-section">
+            <h2>Global Connectivity</h2>
+            <div class="submarine">
+                <div class="subimg">
+                    <img src="./video/submarine.jpg" alt="This image is about submarine">
+                </div>
+                <div class="subinfo">
+                    <h3>The Submarine Backbone</h3>
+                    <p>Over 99% of international data is transmitted via submarine communications cables. These fiber-optic arteries are laid across the ocean floor, connecting continents with speeds exceeding several hundred Terabits per second. Unlike satellite links, these physical cables offer significantly lower latency and higher bandwidth density, forming the true physical foundation of the global internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="infrastructure-section">
+            <h2>Infrastructure Architecture</h2>
+            <section class="infra-section">
+                <div class="infra-img">
+                    <img src="./video/infrastructure.jpg" alt="Thiss is a infrastructure image">
+                </div>
+                <div class="infra-info">
+                    <p><strong>Tier 4 Operations</strong></p>
+                    <ul>
+                        <li>Fault-tolerant infrastructure</li>
+                        <li>Hot-aisle/Cold-aisle containment</li>
+                        <li>Dual-powered server cooling</li>
+                        <li>99.995% annual uptime</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section id="cybersecurity-section">
+            <h2>Cybersecurity Basics</h2>
+            <section class="cyber-section">
+                <div class="cyber-img">
+                    <img src="./video/cybersecurity.jpg" alt="This is image of cybersecuirty">
+                </div>
+                <div class="cyber-info">
+                    <h3>The TLS 1.3 Handshake</h3>
+                    <p>Securing the internet requires robust encryption during transit. The TLS (Transport Layer Security) handshake is the process where client and server negotiate encryption keys.</p>
+                    <ol>
+                        <li><strong>Client Hello:</strong> Proposes cipher suites and sends random nonce.</li>
+                        <li><strong>Server Hello:</strong> Selects cipher and sends digital certificate.</li>
+                        <li><strong>Authentication:</strong> Client verifies certificate with Root CA.</li>
+                        <li><strong>Key Exchange:</strong> Ephemeral keys are generated for session encryption.</li>
+                    </ol>
+                </div>
+            </section>
+        </section>
+
+        <section id="node-section">
+            <h2>Node Configuration Inquiry</h2>
+            <form class="inquiry-form">
+                <div class="node-form">
+                    <div class="form">
+                        <label for="hostname">NODE HOSTNAME</label>
+                        <input type="text" name="hostname" id="hostname" placeholder="e.g. edge-server-v4" required>
+                    </div>
+                    <div class="form">
+                        <label for="ip">GATEWAY IP ADDRESS</label>
+                        <input type="text" name="ip" id="ip" placeholder="192.168.1.1">
+                    </div>
+                    <div class="form">
+                        <label for="subnet">SUBNET MASK</label>
+                        <select name="subnet" id="subnet">
+                            <option value="255.255.255.0 (/24)">255.255.255.0 (/24)</option>
+                            <option value="255.255.0.0 (/16)">255.255.0.0 (/16)</option>
+                            <option value="255.255.255.252 (/30)">255.255.255.252 (/30)</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="level-threshold">SECURITY LEVEL THRESHOLD</label>
+                        <input type="range">
+                    </div>
+
+                </div>
+                <div class="button-form">
+                    <div>
+                    <label for="TCP" class="radio"><input type="radio" name="output" id="TCP" value="TCP" ><span>TCP Reliable</span></label>
+                    <label for="UDP" class="radio"><input type="radio" name="output" id="UDP" value="UDP"><span>UDP Datagram</span></label>
+                    </div>
+                    <div class="button">
+                        <button type="reset" class="reset">Clear Buffer</button>
+                        <button type="submit" class="submit">Commit Configuration</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="refernce-section">
+            <h2>Reference Mapping</h2>
+            <table class="table-section">
+                <thead>
+                    <tr>
+                        <th>OSI Layer #</th>
+                        <th>OSI Layer Name</th>
+                        <th>TCP/IP Layer</th>
+                        <th>Protocols & Devices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="number">7-5</td>
+                        <td>Application, Presentation, Session</td>
+                        <td><span class="ref blue">Application</span></td>
+                        <td>HTTP, DNS, SSH, TLS, FTP</td>
+                    </tr>
+                    <tr>
+                        <td class="number">4</td>
+                        <td>Transport</td>
+                        <td><span class="ref purple">Transport</span></td>
+                        <td>TCP, UDP, SCTP, QUIC</td>
+                    </tr>
+                    <tr>
+                        <td class="number">3</td>
+                        <td>Network</td>
+                        <td><span class="ref green">Internet</span></td>
+                        <td>IPv4, IPv6, ICMP, IPsec</td>
+                    </tr>
+                    <tr>
+                        <td class="number">2-1</td>
+                        <td>Data Link, Physical</td>
+                        <td><span class="ref orange">Link</span></td>
+                        <td>Ethernet, Wi-Fi, MAC, Fiber</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <section id="documenation-section">
+            <div class="doc1">
+                <h3>IETF Documentation Archive</h3>
+                <p>Providing the global community with technical standards and open architectural frameworks for a secure and interconnected future.</p>
+                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-terminal-icon lucide-square-terminal"><path d="m7 11 2-2-2-2"/><path d="M11 13h4"/><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-asterisk-icon lucide-asterisk"><path d="M12 6v12"/><path d="M17.196 9 6.804 15"/><path d="m6.804 9 10.392 6"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss-icon lucide-rss"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+            </div>
+            <div class="doc2">
+                <h4>SITEMAP</h4>
+                <ul>
+                    <li>Protocol Standards</li>
+                    <li>Infrastructure Map</li>
+                    <li>Security Layers</li>
+                    <li>RFC Index</li>
+                </ul>
+            </div>
+            <div class="doc3">
+                <h4>NEWSPAPER</h4>
+                <p>Subscribe for technical bulletins and RFC updates.</p>
+                <div class="button-foot">
+                <input type="email" name="email" placeholder="email@address.tech">
+                <button type="submit" class="email-submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-horizontal-icon lucide-send-horizontal"><path d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"/><path d="M6 12h16"/></svg></button>
+                </div>
+            </div>
+        </section>
+        <div class="footer-end">
+            <div class="copyright">
+                <p>&copy; 2024 Internet Foundations Guide. All rights reserved.</p>
+            </div>
+            <div class="privacy">
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li><a href="#top" class="number">Back to Top</a></li>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
