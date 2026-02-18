@@ -48,12 +48,12 @@ main,footer{
     grid-column: span 12;
 }
 
-#core-section,
-#global-section,
-#infrastructure-section,
-#cybersecurity-section,
-#node-section,
-#refernce-section,
+.core-section,
+.global-section,
+.infrastructure-section,
+.cybersecurity-section,
+.node-section,
+.refernce-section,
 footer {
     margin-top: 120px;
 }
@@ -141,7 +141,7 @@ header p{
 
 /* prtocol-section */
 
-#core-section h2{
+.core-section h2{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -191,7 +191,7 @@ header p{
 }
 
 /* submarine-section */
-#global-section h2{
+.global-section h2{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -219,7 +219,7 @@ header p{
 /* infrastrcuture-section */
 
 
-#infrastructure-section h2{
+.infrastructure-section h2{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -254,17 +254,19 @@ header p{
     list-style-type: none;
     color: var(--text-secondary);
     line-height: 2.6;
-    font-size: 1rem;
+    font-size: 14px;
     
 }
 .infra-info li::before{
     content: " ☑ ";
-    color: var(--accent-primary)
+    margin-right: 10px;
+    color: var(--accent-primary);
+    
 }
 
 /* cybersecurity-section */
 
-#cybersecurity-section h2{
+.cybersecurity-section h2{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -295,7 +297,7 @@ header p{
 
 /* form-section */
 
-#node-section{
+.node-section{
     color: var(--text-secondary);
 }
 #node-section h2{
@@ -383,7 +385,7 @@ input:focus, select:focus{
 
 /* reference-section */
 
-#refernce-section h2{
+.refernce-section h2{
     font-weight: 700;
     font-size: 2rem;
 }
@@ -392,7 +394,6 @@ input:focus, select:focus{
     border: 1px solid var(--border);
     color: var(--text-primary);
     margin-top: 20px;
-    /* padding: 20px; */
     border-collapse: collapse;
     width: 100%;
     border-radius: 10px;
@@ -436,7 +437,7 @@ td{
 /* footer-section */
 
 
-#documenation-section{
+.documenation-section{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 60px;
@@ -532,27 +533,13 @@ td{
 }
 
 @media(max-width:600px){
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .protocol-section{
-        grid-template-columns: 1fr;
-    }
-    .infra-section{
-        grid-template-columns: 1fr;
-    }
-    .cyber-section{
-        grid-template-columns: 1fr;
-    }
-    .node-form{
-        grid-template-columns: 1fr;
-    }
-    .button-form{
-        grid-template-columns: 1fr;
-    }
-    #documenation-section{
-        grid-template-columns: 1fr;
-    }
+    .cards,
+    .protocol-section,
+    .infra-section,
+    .cyber-section,
+    .node-form,
+    .button-form,
+    .documenation-section,
     .footer-end{
         grid-template-columns: 1fr;
     }
