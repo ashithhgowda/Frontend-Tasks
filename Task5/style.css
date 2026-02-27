@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#0f1115;
+    --card-background: #1a1d24;
+    --border-color: #2a2f3a;
+    --primary-text: #e5e7eb;
+    --secondary-text: #9ca3af;
+    --primary-action-color: #3b82f6;
+    --pass-status-color: #22c55e;
+    --fail-status-color: #ef4444;
+}
+
+body{
+    font-family: 'Inter', Segoe UI, system-ui, sans-serif;
+    font-size: 14px;
+    background: var(--card-background);
+}
+
+.container{
+    max-width: 1400px;
+    margin: 20px auto;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--background);
+}
+.studentheader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--card-background);
+    outline-width: 100%;
+    padding: 20px;
+    outline: hidden;
+}
+.headericon{
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    background: var(--primary-action-color);
+}
+.headertitle{
+    color: var(--primary-text);
+}
+.container2{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.bodyform{
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--primary-text);
+    background: var(--card-background);
+    padding: 20px;
+}
+.labelfield{
+    color: var(--secondary-text);
+}
+.forminfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.inputfield{
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--background);
+    color: var(--secondary-text);
+}
+.inputfield:focus{
+    outline: none;
+    border: 1px solid var(--primary-action-color);
+}
+.buttonform{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.buttoninput{
+    background: var(--primary-action-color);
+    color: white;
+    border: none;
+    padding: 10px ;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: auto;
+}
+.buttoninput:hover{
+    background: #2359b0;
+    transition: all ease 0.2s;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(81, 47, 204, 0.3);
+}
+/* search section  */
+
+.search-section{
+    margin-top: 20px;
+}
+.search-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-background);
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+.search-input:focus{
+    outline: none;
+    border: 1px solid var(--primary-action-color);
+}
+
+.table-section{
+    margin-top: 20px;
+}
+.table-container{
+    height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-background);
+}
+
+.tablecontents{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.table-bodysection{
+    color: var(--secondary-text);
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+}
+.table-head{
+    background: var(--border-color);
+}
+.table-head-th{
+    padding: 16px 20px;
+    text-align: left;
+}
+
+.tablefooter{
+    padding: 12px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    background: var(--card-background);
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+
+.table-info{
+    border-bottom: 1px solid var(--border-color);
+}
+.table-info:hover{
+    background:  rgba(255, 255, 255, 0.04);
+}
+
+/* student-info section */
+.student-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.initials-logo{
+    border: 1px solid var(--border-color);
+    background: var(--border-color);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--primary-action-color);
+}
+.initials-info-name{
+    color: var(--primary-text);
+    font-size: clamp(14px,1.2vw,16px);
+}
+
+/* id&department section  */
+.identity-id{
+    color: var(--primary-action-color);
+}
+.identity-dept{
+    font-size: 12px;
+}
+
+/* percentage section  */
+.percentage-section {
+    width: 180px;
+}
+.percentage-text{
+    color: var(--primary-text);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.progress-bar-section{
+    height: 6px;
+    background: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress-bar{
+    height: 100%;
+    border-radius: 4px;
+}
+.progress-bar.pass{
+    background: var(--pass-status-color);
+}
+.progress-bar.fail{
+    background: var(--fail-status-color);
+}
+.status-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.progress-bar-status.pass{
+    background: var(--pass-status-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: var(--card-background);
+    font-weight: 600;
+}
+.progress-bar-status.fail{
+    background: var(--fail-status-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: var(--card-background);
+    font-weight: 600;
+}
+.status-action-button{
+    background: transparent;
+    border: none;
+    color: var(--secondary-text);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+.status-action-button:hover{
+    cursor: pointer;
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+}
+
+.footerbody{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-text);
+    font-size: 12px;
+    margin-bottom: 40px ;
+}
+
+@media(max-width:900px){
+    .container2{
+        max-width: 700px;
+    }
+    .forminfo{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .bodyform{
+        align-items: stretch;
+    }
+    .buttoninput{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .container2{
+        max-width: 400px;
+    }
+    .initials-logo{
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        font-size: 14px;
+    }
+    .forminfo{
+        grid-template-columns: 1fr;
+    }
+    
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <meta property="og:title" content="Student Management System">
+    <meta property="og:description" content="This is a system for managing the students details">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <main>
+        <header class="studentheader">
+            <div class="headericon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap-icon lucide-graduation-cap"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            </div>
+            <div class="headertitle">
+                <h2>Student Management System</h2>
+            </div>
+        </header>
+        <div class="container2">
+            <section class="bodyform">
+                <div class="formheading">
+                    <h3 class="labelfield">Register Students</h3>
+                </div>
+                <div class="forminfo">
+                <div class="forminput">
+                    <label for="userName" class="labelfield">Full Name</label>
+                    <input type="text" name="name" id="userName" placeholder="John Doe" class="inputfield">
+                </div>
+                <div class="forminput">
+                    <label for="userStudentid" class="labelfield">Student ID</label>
+                    <input type="text" name="id" id="userStudentid" placeholder="STU-2024-001" class="inputfield">
+                </div>
+                <div class="forminput">
+                    <label for="userDept" class="labelfield">Department</label>
+                    <select name="dept" id="userDept" class="inputfield">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Data Science">Data Science</option>
+                    </select>
+                </div>
+                <div class="forminput">
+                    <label for="userPercentage" class="labelfield">Percentage</label>
+                    <input type="number" name="percentage" id="userPercentage" placeholder="0-100" class="inputfield">
+                </div>
+                <div class="buttonform">
+                <button type="submit" id="buttoninput" class="buttoninput">Add Student</button>
+                </div>
+                </div>
+            </section>
+            <section class="search-section">
+                <input type="search" id="searchid" name="search-id" class="search-input" placeholder="Search Student by name,id or department">
+            </section>
+            <section class="table-section">
+                <div class="table-container">
+                    <div class="tablecontents">
+                    <table id="table-bodysection" class="table-bodysection">
+                        <thead class="table-head">
+                        <tr>
+                            <th class="table-head-th">STUDENT INFO</th>
+                            <th class="table-head-th">IDENTITY & DEPARTMENT</th>
+                            <th class="table-head-th">PERCENTAGE</th>
+                            <th class="table-head-th">STATUS & ACTIONS</th>
+                        </tr>
+                        </thead>
+                        <tbody class="tablebody" id="tablebody">
+
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="tablefooter" id="tablefooter">
+                        Showing 0 of 124 Students
+                    </div>
+                </div>
+            </section>
+            <section class="footerbody">
+                <p class="footerpara">© 2024 Student Management System. All rights reserved.</p>
+            </section>
+        </div>
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
