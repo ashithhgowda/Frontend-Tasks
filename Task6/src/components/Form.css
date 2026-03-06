@@ -1,0 +1,61 @@
+.form-container {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 40px;
+  width: 350px;
+  background: rgb(129, 125, 125);
+  color: black;
+  box-shadow: 0px 4px 16px rgba(250, 152, 152, 0.4);
+}
+.personal{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.error-message{
+  color: red;
+  height: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.labelname{
+  width: 80px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.inputname{
+  outline: none;
+  flex: 1;
+  padding: 6px;
+}
+.inputname:focus{
+  border: 1px solid white;
+}
+.buttonbox{
+  margin-top: 20px;
+  margin: 10px;
+}
+.buttonbox:hover{
+  cursor: pointer;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.review-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.review-table td{
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.review-table td:first-child{
+  font-weight: 700;
+}
